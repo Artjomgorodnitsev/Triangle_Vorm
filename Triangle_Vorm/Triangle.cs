@@ -65,6 +65,13 @@ namespace Triangle_Vorm
             return s;
         }
 
+        public double Sinus()
+        {
+            
+        }
+
+
+
         public double GetSetA
         {
             get { return a; }
