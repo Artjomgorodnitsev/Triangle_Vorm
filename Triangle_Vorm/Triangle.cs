@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Triangle_Vorm
 {
-    class Triangle
+    public class Triangle
     {
         public double a;
         public double b;
@@ -49,6 +49,11 @@ namespace Triangle_Vorm
             return Convert.ToString(c);
         }
 
+        public string outputH()
+        {
+            return Convert.ToString(h);
+        }
+
         public double Perimeter()
         {
             double p = 0;
@@ -65,10 +70,13 @@ namespace Triangle_Vorm
             return s;
         }
 
-        public double Sinus()
+        public double Surface2()
         {
-            
+            double s = 0;
+            s = 0.5 * a * h;
+            return s;
         }
+
 
 
 
