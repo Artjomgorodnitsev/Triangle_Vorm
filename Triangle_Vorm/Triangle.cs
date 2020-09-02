@@ -114,6 +114,20 @@ namespace Triangle_Vorm
                
             }
         }
+
+        public int TypeTriangleRavn {
+            get {
+                if (a == b && b == c && c == a)
+                    return 1;
+                else if (a == b && b != c && c != a)
+                    return 2;
+                else
+                    return 3;
+
+            }
+        }
+
+        
     }
 
     
