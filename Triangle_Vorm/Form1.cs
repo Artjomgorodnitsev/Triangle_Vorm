@@ -49,15 +49,16 @@ namespace Triangle_Vorm
                 if (triangle.TypeTriangleRavn == 1)
                 {
                     listView1.Items[6].SubItems.Add("Равносторонний");
-                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "ravnostoronii.png");
+                    pictureBox1.Image = Image.FromFile(("C:/Users/User/Source/Repos/Triangle_Vorm/Triangle_Vorm/Resources/ravnostoronii.png"));
                 }
                 else if (triangle.TypeTriangleRavn == 2) { listView1.Items[6].SubItems.Add("Равнобедренный");
-                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "ravnobedren.png");
+                    /*pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "ravnobedren.png");*/
+                    pictureBox1.Image = Image.FromFile(("C:/Users/User/Source/Repos/Triangle_Vorm/Triangle_Vorm/Resources/ravnobedren.png"));
                 }
                 else if (triangle.TypeTriangleRavn == 3)
                 {
                     listView1.Items[6].SubItems.Add("Остроугольный");
-                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "triangle.jpg");
+                    pictureBox1.Image = Image.FromFile(("C:/Users/User/Source/Repos/Triangle_Vorm/Triangle_Vorm/Resources/triangle.jpg"));
                 }
                 else if (triangle.TypeTriangleRavn == 4)
                 {

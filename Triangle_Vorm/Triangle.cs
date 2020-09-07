@@ -36,6 +36,7 @@ namespace Triangle_Vorm
 
 
 
+
         public string outputA()
         {
             return Convert.ToString(a);
