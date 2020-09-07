@@ -29,7 +29,7 @@ namespace Triangle_Vorm
             //a = Convert.ToDouble(txtAA.Text);
             b = Convert.ToDouble(txtBB.Text);
             c = Convert.ToDouble(txtCC.Text);
-            Triangle triangle = new Triangle( b,c);
+            Triangle triangle = new Triangle(b, c);
             labelA.Text = triangle.outputAU();
             labelB.Text = triangle.outputBU();
             labelC.Text = triangle.outputCU();
