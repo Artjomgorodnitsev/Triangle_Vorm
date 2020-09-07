@@ -44,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,9 +55,9 @@
             this.Run_button.FlatAppearance.BorderSize = 10;
             this.Run_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Run_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.Run_button.Location = new System.Drawing.Point(411, 259);
+            this.Run_button.Location = new System.Drawing.Point(416, 262);
             this.Run_button.Name = "Run_button";
-            this.Run_button.Size = new System.Drawing.Size(167, 75);
+            this.Run_button.Size = new System.Drawing.Size(167, 72);
             this.Run_button.TabIndex = 0;
             this.Run_button.Text = "Запуск";
             this.Run_button.UseVisualStyleBackColor = false;
@@ -64,7 +65,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Triangle_Vorm.Properties.Resources.triangle;
             this.pictureBox1.Location = new System.Drawing.Point(411, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(172, 209);
@@ -180,11 +180,28 @@
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button1.FlatAppearance.BorderSize = 5;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.button1.Location = new System.Drawing.Point(265, 262);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 72);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Работа с треугольниками 2";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 346);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label4);
@@ -225,6 +242,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

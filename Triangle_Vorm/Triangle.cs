@@ -54,6 +54,19 @@ namespace Triangle_Vorm
             return Convert.ToString(h);
         }
 
+        public string outputAU()
+        {
+            return Convert.ToString(a);
+        }
+        public string outputBU()
+        {
+            return Convert.ToString(b);
+        }
+        public string outputCU()
+        {
+            return Convert.ToString(c);
+        }
+
         public double Perimeter()
         {
             double p = 0;
@@ -75,6 +88,13 @@ namespace Triangle_Vorm
             double s = 0;
             s = 0.5 * a * h;
             return s;
+        }
+
+        public double sinA()
+        {
+            double sinusA = 0;
+            sinusA = Math.Round((a / c),2);
+            return sinusA;
         }
 
 
@@ -121,8 +141,10 @@ namespace Triangle_Vorm
                     return 1;
                 else if (a == b && b != c && c != a)
                     return 2;
-                else
+                else if (a != b && b != c && c != a)
                     return 3;
+                else
+                    return 4;
 
             }
         }

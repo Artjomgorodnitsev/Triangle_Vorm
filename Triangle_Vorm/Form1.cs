@@ -54,7 +54,16 @@ namespace Triangle_Vorm
                 else if (triangle.TypeTriangleRavn == 2) { listView1.Items[6].SubItems.Add("Равнобедренный");
                     pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "ravnobedren.png");
                 }
-                else listView1.Items[6].SubItems.Add("Остроугольный");
+                else if (triangle.TypeTriangleRavn == 3)
+                {
+                    listView1.Items[6].SubItems.Add("Остроугольный");
+                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "triangle.jpg");
+                }
+                else if (triangle.TypeTriangleRavn == 4)
+                {
+                    listView1.Items[6].SubItems.Add("");
+                    pictureBox1.Image = null;
+                }
                 //pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "ostr.png");
 
             }
@@ -95,6 +104,13 @@ namespace Triangle_Vorm
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 newForm = new Form2();
+            newForm.Show();
+            this.Hide();
         }
     }
 }
